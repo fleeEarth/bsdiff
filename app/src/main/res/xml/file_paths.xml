@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--android7读写权限配置路径-->
+    <paths>
+        <external-path name="patch" path="."/>
+    </paths>
+</resources>
+
