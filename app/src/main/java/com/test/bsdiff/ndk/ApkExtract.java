@@ -7,17 +7,16 @@ import android.net.Uri;
 import android.os.Build;
 import android.support.v4.BuildConfig;
 import android.support.v4.content.FileProvider;
-import android.util.Log;
 
 import java.io.File;
+
 
 public class ApkExtract {
 
     public static String extract(Context context) {
         context = context.getApplicationContext();
         ApplicationInfo applicationInfo = context.getApplicationInfo();
-        String apkPath = applicationInfo.sourceDir;
-        return apkPath;
+        return applicationInfo.sourceDir;
     }
 
     public static void install(Context context, String apkPath) {

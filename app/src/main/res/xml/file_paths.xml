@@ -2,7 +2,11 @@
 <resources>
     <!--android7读写权限配置路径-->
     <paths>
-        <external-path name="patch" path="."/>
+        <!--代表外部存储区域的根目录下的文件 Environment.getExternalStorageDirectory()/目录-->
+        <external-path path="." name="external_storage_file" />
+
+
+        <files-patch path="." name="storage" ></files-patch>
     </paths>
 </resources>
 

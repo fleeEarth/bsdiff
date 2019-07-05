@@ -42,6 +42,7 @@ __FBSDID("$FreeBSD: src/usr.bin/bsdiff/bspatch/bspatch.c,v 1.1 2005/08/06 01:59:
 #include "bzip2/blocksort.c"
 #include "bzip2/huffman.c"
 #include <com_test_bsdiff_ndk_PatchUtils.h>
+int genpatch(int argc,char * argv[]);
 JNIEXPORT jint JNICALL Java_com_test_bsdiff_ndk_PatchUtils_bspatch(JNIEnv *env,
         jclass cls, jstring oldApkPath, jstring newApkPath, jstring patchPath) {
     int argc = 4;
