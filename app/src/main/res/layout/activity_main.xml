@@ -5,17 +5,17 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".activity.MainActivity">
 
     <TextView
             android:layout_width="204dp"
             android:layout_height="68dp"
-            android:text="HelloBsdiff"
+            android:text="YesBsdiff"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:id="@+id/textView" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/updateApk" app:layout_constraintVertical_bias="0.311"
+            app:layout_constraintBottom_toTopOf="@+id/updateApk" app:layout_constraintVertical_bias="0.497"
             android:textSize="30sp" android:textAlignment="center" android:textStyle="bold|italic"
             android:textColor="@android:color/holo_orange_dark" android:lineSpacingExtra="30sp"/>
     <Button
@@ -37,7 +37,7 @@
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintHorizontal_bias="1.0" app:layout_constraintVertical_bias="0.0"/>
     <TextView
-            android:text="Version:1.6.5"
+            android:text="Version:1.6.6"
             android:layout_width="230dp"
             android:layout_height="36dp"
             android:id="@+id/textView2" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
@@ -55,5 +55,18 @@
             android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/button"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:textColor="#564545"
             app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.714"/>
+    <Switch
+            android:text="指纹解锁  "
+            android:layout_width="136dp"
+            android:layout_height="50dp"
+            android:id="@+id/zhiwenkey"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textOn="@string/on" android:textOff="@string/off"
+            android:layout_marginStart="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.034" app:layout_constraintVertical_bias="0.36"
+            android:showText="true" tools:checked="false" android:textAlignment="center"
+            android:textStyle="bold"/>
 
 </android.support.constraint.ConstraintLayout>
